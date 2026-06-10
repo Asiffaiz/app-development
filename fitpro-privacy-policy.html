@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — NutriTrack</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --lime:      #b0d43e;
+    --lime-dim:  #8faa30;
+    --lime-glow: rgba(176,212,62,0.10);
+    --lime-soft: rgba(176,212,62,0.06);
+    --lime-border: rgba(176,212,62,0.22);
+    --black:     #000000;
+    --surface:   #0c0c0c;
+    --card:      #101010;
+    --border:    #1c1c1c;
+    --border2:   #262626;
+    --text:      #dcdcdc;
+    --muted:     #7a7a7a;
+    --muted2:    #444444;
+    --white:     #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── HERO ─────────────────────────────────────────── */
+  .hero {
+    position: relative;
+    padding: 72px 40px 60px;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 0% 50%, rgba(176,212,62,0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 100% 0%, rgba(176,212,62,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--lime);
+    margin-bottom: 20px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1.5px;
+    background: var(--lime);
+    border-radius: 2px;
+  }
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(36px, 5.5vw, 60px);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    margin-bottom: 20px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--lime);
+  }
+  .hero-desc {
+    font-size: 15px;
+    color: var(--muted);
+    max-width: 520px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .hero-pills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 13px;
+    border: 1px solid var(--border2);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--card);
+  }
+  .hero-pill svg {
+    width: 12px; height: 12px;
+    stroke: var(--lime); fill: none;
+    stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  /* ─── LAYOUT ─────────────────────────────────────── */
+  .wrap {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  /* ─── SIDEBAR ────────────────────────────────────── */
+  .sidebar {
+    border-right: 1px solid var(--border);
+    padding: 44px 0 100px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border2) transparent;
+  }
+  .sidebar-hd {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted2);
+    padding: 0 24px 14px;
+  }
+  .sidebar nav { display: flex; flex-direction: column; }
+  .sidebar a {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 9px 24px;
+    font-size: 12.5px;
+    color: var(--muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color .15s, background .15s, border-color .15s;
+    line-height: 1.35;
+  }
+  .sidebar a:hover { color: var(--text); background: var(--lime-soft); }
+  .sidebar a.on {
+    color: var(--lime);
+    border-left-color: var(--lime);
+    background: var(--lime-soft);
+    font-weight: 500;
+  }
+  .sidebar a .n {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: var(--muted2);
+    font-family: 'Syne', sans-serif;
+    min-width: 16px;
+  }
+  .sidebar a.on .n { color: var(--lime-dim); }
+
+  /* ─── MAIN ───────────────────────────────────────── */
+  .main {
+    padding: 56px 60px 120px;
+  }
+
+  /* ─── SECTION ────────────────────────────────────── */
+  .sec {
+    margin-bottom: 68px;
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .45s ease, transform .45s ease;
+  }
+  .sec.vis { opacity: 1; transform: none; }
+
+  .sec-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sec-bar {
+    width: 3px;
+    min-height: 36px;
+    background: var(--lime);
+    border-radius: 2px;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .sec-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--lime-dim);
+    margin-bottom: 4px;
+  }
+  .sec-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+  }
+
+  /* ─── PROSE ──────────────────────────────────────── */
+  .prose p {
+    font-size: 14.5px;
+    color: var(--text);
+    margin-bottom: 14px;
+    line-height: 1.8;
+  }
+  .prose p:last-child { margin-bottom: 0; }
+  .prose strong { color: var(--white); font-weight: 600; }
+  .prose a {
+    color: var(--lime);
+    text-decoration: none;
+    border-bottom: 1px solid var(--lime-border);
+    transition: border-color .15s;
+  }
+  .prose a:hover { border-color: var(--lime); }
+
+  /* ─── CALLOUT ────────────────────────────────────── */
+  .callout {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--lime-soft);
+    border: 1px solid var(--lime-border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 18px 0;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .callout svg {
+    width: 16px; height: 16px;
+    stroke: var(--lime); fill: none;
+    stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .callout-body strong { color: var(--white); }
+
+  .callout.neutral {
+    background: var(--card);
+    border-color: var(--border2);
+  }
+  .callout.neutral svg { stroke: var(--muted); }
+
+  /* ─── LIST ───────────────────────────────────────── */
+  .ulist {
+    list-style: none;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .ulist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    line-height: 1.65;
+  }
+  .ulist li:last-child { border-bottom: none; }
+  .ulist li::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--lime);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 9px;
+  }
+  .ulist li strong { color: var(--white); font-weight: 500; }
+
+  /* ─── TABLE ──────────────────────────────────────── */
+  .tbl-wrap { overflow-x: auto; margin: 16px 0; }
+  .tbl {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  .tbl th {
+    text-align: left;
+    padding: 9px 14px;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--card);
+    border-bottom: 1px solid var(--border2);
+  }
+  .tbl td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .tbl tr:last-child td { border-bottom: none; }
+  .tbl tr:hover td { background: var(--lime-soft); }
+  .tbl td strong { color: var(--white); font-weight: 500; }
+
+  /* ─── TAG ────────────────────────────────────────── */
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-weight: 600;
+    letter-spacing: .04em;
+  }
+  .tag-yes { background: var(--lime-glow); color: var(--lime); border: 1px solid var(--lime-border); }
+  .tag-no  { background: var(--card); color: var(--muted); border: 1px solid var(--border2); }
+
+  /* ─── GRID ───────────────────────────────────────── */
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .gc {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .gc .gl { font-size: 10.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+  .gc .gv { font-size: 13.5px; color: var(--text); }
+
+  /* ─── CONTACT ────────────────────────────────────── */
+  .contact-box {
+    background: var(--card);
+    border: 1px solid var(--lime-border);
+    border-radius: 12px;
+    padding: 26px 28px;
+    margin-top: 18px;
+  }
+  .contact-box h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .crow {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+  .crow:last-child { border-bottom: none; }
+  .crow svg {
+    width: 15px; height: 15px;
+    stroke: var(--lime); fill: none;
+    stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .crow .cl { color: var(--muted); min-width: 75px; font-size: 12px; }
+  .crow a { color: var(--lime); text-decoration: none; }
+  .crow a:hover { text-decoration: underline; }
+
+  /* ─── FOOTER ─────────────────────────────────────── */
+  footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 36px 40px;
+    text-align: center;
+  }
+  .ft-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--lime);
+    margin-bottom: 10px;
+    letter-spacing: -.01em;
+  }
+  footer p { font-size: 12.5px; color: var(--muted); line-height: 1.7; }
+
+  /* ─── RESPONSIVE ─────────────────────────────────── */
+  @media (max-width: 780px) {
+    .wrap { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+    .main { padding: 32px 22px 80px; }
+    .hero { padding: 52px 22px 44px; }
+    .grid2 { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sec { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Legal &amp; Privacy</div>
+    <h1>Privacy <em>Policy</em></h1>
+    <p class="hero-desc">This policy explains what personal information NutriTrack collects, why we collect it, and the choices you have over your data.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Effective: June 10, 2026
+      </span>
+      <span class="hero-pill">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        GDPR Compliant
+      </span>
+      <span class="hero-pill">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        CCPA Compliant
+      </span>
+      <span class="hero-pill">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        We never sell your data
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-hd">On this page</div>
+    <nav id="sidenav">
+      <a href="#intro"     class="on"><span class="n">01</span>Introduction</a>
+      <a href="#collect">     <span class="n">02</span>Information We Collect</a>
+      <a href="#use">         <span class="n">03</span>How We Use It</a>
+      <a href="#sharing">     <span class="n">04</span>Sharing &amp; Disclosure</a>
+      <a href="#thirdparty">  <span class="n">05</span>Third-Party Services</a>
+      <a href="#health">      <span class="n">06</span>Health Data</a>
+      <a href="#camera">      <span class="n">07</span>Camera Use</a>
+      <a href="#retention">   <span class="n">08</span>Data Retention</a>
+      <a href="#rights">      <span class="n">09</span>Your Rights</a>
+      <a href="#children">    <span class="n">10</span>Children</a>
+      <a href="#security">    <span class="n">11</span>Security</a>
+      <a href="#changes">     <span class="n">12</span>Policy Changes</a>
+      <a href="#contact">     <span class="n">13</span>Contact</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- 01 INTRODUCTION -->
+    <section class="sec" id="intro">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">01 — Introduction</div>
+          <h2 class="sec-title">Introduction</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>Welcome to <strong>NutriTrack</strong>. We are committed to protecting your privacy and handling your personal information with care and transparency.</p>
+        <p>This Privacy Policy applies to the NutriTrack mobile application ("App") available on Android and iOS devices. By using the App, you agree to the collection and use of information as described in this policy.</p>
+        <p>Please read this policy carefully. If you do not agree with its terms, please stop using the App and delete your account.</p>
+      </div>
+      <div class="callout">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="callout-body">
+          <strong>Our promise to you:</strong> We do not sell, rent, or trade your personal information to any third party — ever. Your health and fitness data belongs to you.
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="gc"><div class="gl">App Name</div><div class="gv">NutriTrack</div></div>
+        <div class="gc"><div class="gl">Platforms</div><div class="gv">Android &amp; iOS</div></div>
+        <div class="gc"><div class="gl">Audience</div><div class="gv">Users aged 13 and above</div></div>
+        <div class="gc"><div class="gl">Compliance</div><div class="gv">GDPR · CCPA · COPPA</div></div>
+      </div>
+    </section>
+
+    <!-- 02 INFORMATION WE COLLECT -->
+    <section class="sec" id="collect">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">02 — Data Collection</div>
+          <h2 class="sec-title">Information We Collect</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>We collect only the information necessary to provide you with a personalised calorie tracking and fitness experience. We collect information in three ways: information you give us, information created by your use of the App, and information collected automatically.</p>
+      </div>
+
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr><th>Category</th><th>What we collect</th><th>You provide this?</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Account details</strong></td><td>Name, email address</td><td><span class="tag tag-yes">Yes</span></td></tr>
+            <tr><td><strong>Body information</strong></td><td>Height, weight, age, biological sex, fitness goal</td><td><span class="tag tag-yes">Yes</span></td></tr>
+            <tr><td><strong>Food diary</strong></td><td>Meals logged, food names, portion sizes, calorie and nutrition values</td><td><span class="tag tag-yes">Yes</span></td></tr>
+            <tr><td><strong>Workout records</strong></td><td>Exercise names, duration, sets, repetitions, and estimated calories burned</td><td><span class="tag tag-yes">Yes</span></td></tr>
+            <tr><td><strong>Progress data</strong></td><td>Weight history, habit completions, daily streaks</td><td><span class="tag tag-yes">Yes</span></td></tr>
+            <tr><td><strong>Progress photos</strong></td><td>Photos you choose to upload (Premium subscribers only)</td><td><span class="tag tag-yes">Yes — optional</span></td></tr>
+            <tr><td><strong>Activity data</strong></td><td>Steps and active calories from Apple HealthKit or Google Health Connect, only if you grant permission</td><td><span class="tag tag-yes">Yes — optional</span></td></tr>
+            <tr><td><strong>Device information</strong></td><td>Device model, operating system version, App version, language preference</td><td><span class="tag tag-no">Automatic</span></td></tr>
+            <tr><td><strong>Usage information</strong></td><td>Features you interact with, session length — collected in anonymised form only</td><td><span class="tag tag-no">Automatic</span></td></tr>
+            <tr><td><strong>Error reports</strong></td><td>Crash logs and performance data to help us fix technical issues</td><td><span class="tag tag-no">Automatic</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout neutral">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="callout-body">We do not collect precise GPS location, contacts, microphone audio, or any information unrelated to health and fitness tracking.</div>
+      </div>
+    </section>
+
+    <!-- 03 HOW WE USE IT -->
+    <section class="sec" id="use">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">03 — Data Use</div>
+          <h2 class="sec-title">How We Use Your Information</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>We use your information only for the following purposes. We do not use your personal data for advertising profiling or to build marketing audiences.</p>
+      </div>
+      <ul class="ulist">
+        <li><strong>To provide the App's core features</strong> — food diary, calorie tracking, workout logging, progress charts, and habit tracking</li>
+        <li><strong>To personalise your experience</strong> — calculating your daily calorie goal, macro targets, BMI, and recommended intake based on your body information and goals</li>
+        <li><strong>To sync your data</strong> — keeping your information consistent across your devices and backing it up securely</li>
+        <li><strong>To send you notifications</strong> — meal reminders, workout alerts, and habit check-ins, only if you enable them in Settings</li>
+        <li><strong>To improve the App</strong> — analysing anonymised, aggregated usage patterns to understand which features are most useful and where we can do better</li>
+        <li><strong>To process payments</strong> — managing your subscription and verifying purchase status through our payment partner</li>
+        <li><strong>To provide customer support</strong> — responding to your questions, feedback, and support requests</li>
+        <li><strong>To ensure safety and security</strong> — detecting abuse, fraud, and technical vulnerabilities</li>
+        <li><strong>To meet legal obligations</strong> — complying with applicable laws and regulations</li>
+      </ul>
+    </section>
+
+    <!-- 04 SHARING -->
+    <section class="sec" id="sharing">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">04 — Sharing</div>
+          <h2 class="sec-title">Sharing &amp; Disclosure</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p><strong>We do not sell, rent, or share your personal data with advertisers or data brokers.</strong></p>
+        <p>We share information only in the limited circumstances below:</p>
+      </div>
+      <ul class="ulist">
+        <li><strong>Service providers</strong> — We work with trusted companies that help us operate the App, including cloud hosting, payment processing, and analytics. These partners process data strictly on our behalf under confidentiality agreements and are not permitted to use your data for their own purposes.</li>
+        <li><strong>Legal requirements</strong> — We may disclose information if required by law, court order, or a governmental authority, or to protect the rights and safety of our users and the public.</li>
+        <li><strong>Business transfers</strong> — If NutriTrack is acquired or merges with another company, your data may transfer to the new owner, who will be bound by the same privacy protections described here. We will notify you before any such transfer takes effect.</li>
+        <li><strong>With your consent</strong> — In any other situation, we will only share your information with your explicit prior consent.</li>
+      </ul>
+      <div class="callout">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="callout-body">
+          <strong>We never share your health, fitness, or dietary data</strong> with employers, insurers, advertisers, or any commercial third party for their own use.
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 THIRD-PARTY SERVICES -->
+    <section class="sec" id="thirdparty">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">05 — Third Parties</div>
+          <h2 class="sec-title">Third-Party Services</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>To deliver its features, NutriTrack relies on a number of specialist service providers. Each provider only receives the minimum data necessary to perform their function, and each operates under its own privacy policy.</p>
+        <p>The categories of service providers we use are:</p>
+      </div>
+      <ul class="ulist">
+        <li><strong>Authentication &amp; account services</strong> — Secure sign-in, identity verification, and account management</li>
+        <li><strong>Cloud storage &amp; database services</strong> — Secure storage and synchronisation of your diary, workout, and progress data</li>
+        <li><strong>Nutrition data providers</strong> — Food nutrition databases that power the food search and diary features. Only your search query text is sent — no personal information is transmitted.</li>
+        <li><strong>AI recognition services</strong> — When you use the AI food photo feature (Premium), your food photo is sent to an AI service solely to identify the food and estimate its nutrition. The image is not stored by us or the AI provider after processing.</li>
+        <li><strong>Payment &amp; subscription processing</strong> — Handling in-app purchases and subscription verification on iOS and Android. We never see or store your payment card details.</li>
+        <li><strong>Analytics services</strong> — Anonymised, aggregated data about how the App is used, to help us improve features. No personally identifiable information is included.</li>
+        <li><strong>Crash reporting &amp; performance monitoring</strong> — Automated error logs that help us identify and fix technical problems quickly.</li>
+        <li><strong>Push notification delivery</strong> — Sending reminders and alerts to your device when you have notifications enabled.</li>
+      </ul>
+      <div class="callout neutral">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="callout-body">You can request a full list of our current service providers by contacting us at <a href="mailto:privacy@nutritrack.app">privacy@nutritrack.app</a>. We are transparent about who we work with upon request.</div>
+      </div>
+    </section>
+
+    <!-- 06 HEALTH DATA -->
+    <section class="sec" id="health">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">06 — Health Data</div>
+          <h2 class="sec-title">Health &amp; Fitness Data</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>Health and fitness information is among the most sensitive data we handle. We apply stricter protections to this category above and beyond our standard data practices.</p>
+      </div>
+      <div class="callout">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <div class="callout-body">
+          <strong>Your health data is never used for advertising.</strong> It is never shared with insurers, employers, or marketing companies. It is used solely to operate NutriTrack for you personally.
+        </div>
+      </div>
+      <ul class="ulist">
+        <li>All health and fitness data is encrypted during storage and while in transit between your device and our servers</li>
+        <li>Your food diary, workout history, body measurements, and progress photos are accessible only by you and are not visible to other users</li>
+        <li>If you choose to connect Apple HealthKit or Google Health Connect, we access only the specific data types you explicitly authorise. You can revoke this permission at any time in your device Settings.</li>
+        <li>Data from Apple HealthKit is not used for advertising, marketing, or sold to third parties — in compliance with Apple's HealthKit guidelines</li>
+        <li>Progress photos are stored in a private area of our storage system and are not accessible to any other user or NutriTrack staff except for essential technical maintenance</li>
+        <li>You can permanently delete all your health data at any time from <strong>Settings → Account → Delete My Data</strong></li>
+      </ul>
+    </section>
+
+    <!-- 07 CAMERA -->
+    <section class="sec" id="camera">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">07 — Camera</div>
+          <h2 class="sec-title">Camera Use</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>NutriTrack requests access to your device camera for two specific purposes only. We never access your camera in the background or without a deliberate action on your part.</p>
+      </div>
+      <ul class="ulist">
+        <li><strong>Barcode scanning</strong> — When you scan a packaged food item, the barcode number is sent to a nutrition database to retrieve product information. No image is captured, stored, or transmitted — only the barcode number.</li>
+        <li><strong>AI food photo recognition (Premium)</strong> — When you choose to photograph a meal, the image is sent over an encrypted connection to an AI service that identifies the food and estimates its nutritional content. Neither we nor the AI service store the image after it has been processed.</li>
+        <li><strong>Progress photos (Premium)</strong> — Photos you voluntarily upload to track your visual progress are stored securely in your private account and are never shared or used for any other purpose.</li>
+      </ul>
+      <div class="callout neutral">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="callout-body">You can revoke camera permission at any time in your device's Settings app. Revoking camera access will disable barcode scanning and AI food photo features but will not affect manual food search or any other App functionality.</div>
+      </div>
+    </section>
+
+    <!-- 08 RETENTION -->
+    <section class="sec" id="retention">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">08 — Retention</div>
+          <h2 class="sec-title">Data Retention</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>We keep your data only for as long as necessary to provide our service or as required by law. The table below describes our standard retention periods.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead>
+            <tr><th>Data type</th><th>How long we keep it</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Active account data</strong> (food logs, workouts, progress)</td><td>For the lifetime of your account</td></tr>
+            <tr><td><strong>Account data after deletion</strong></td><td>Permanently deleted within 30 days of account deletion request</td></tr>
+            <tr><td><strong>Progress photos</strong></td><td>Until you delete them individually or delete your account</td></tr>
+            <tr><td><strong>Anonymised analytics</strong></td><td>Up to 24 months, after which it is permanently deleted</td></tr>
+            <tr><td><strong>Crash and error reports</strong></td><td>90 days</td></tr>
+            <tr><td><strong>Payment records</strong></td><td>7 years, as required by financial regulations</td></tr>
+            <tr><td><strong>Support communications</strong></td><td>2 years from the date of last contact</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 09 YOUR RIGHTS -->
+    <section class="sec" id="rights">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">09 — Your Rights</div>
+          <h2 class="sec-title">Your Rights</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>You have meaningful rights over your personal data. Most of these can be exercised directly within the App, and all can be exercised by contacting us.</p>
+      </div>
+      <ul class="ulist">
+        <li><strong>Right to access</strong> — Request a copy of the personal data we hold about you at any time</li>
+        <li><strong>Right to correction</strong> — Update or correct any inaccurate information from your Profile screen at any time</li>
+        <li><strong>Right to deletion</strong> — Permanently delete your account and all associated data via <strong>Settings → Account → Delete My Account</strong></li>
+        <li><strong>Right to data portability</strong> — Export your food logs, workout history, and progress records (Premium)</li>
+        <li><strong>Right to restrict processing</strong> — Request that we limit how we use your data in certain circumstances</li>
+        <li><strong>Right to object</strong> — Object to the processing of your data for direct marketing purposes at any time</li>
+        <li><strong>Right to withdraw consent</strong> — Withdraw any consent you have given at any time, without affecting any processing that occurred before withdrawal</li>
+        <li><strong>Right to lodge a complaint</strong> — File a complaint with your national data protection authority. EU/UK residents may contact their respective supervisory authority.</li>
+      </ul>
+      <div class="callout">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="callout-body">
+          <strong>California residents (CCPA):</strong> You have the right to know what personal information we collect, the right to request deletion, and the right to opt-out of sale — we do not sell your data. You also have the right to non-discrimination for exercising any of these rights.
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 CHILDREN -->
+    <section class="sec" id="children">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">10 — Children</div>
+          <h2 class="sec-title">Children's Privacy</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>NutriTrack is not intended for children under the age of <strong>13</strong> (or under <strong>16</strong> in the European Union). We do not knowingly collect personal information from children below these ages.</p>
+        <p>If you are a parent or guardian and believe your child has created an account or provided personal information without your consent, please contact us immediately at <a href="mailto:privacy@nutritrack.app">privacy@nutritrack.app</a>. We will investigate and delete the information promptly upon verification.</p>
+        <p>Users between the ages of 13 and 18 may use the App only with the consent and supervision of a parent or legal guardian.</p>
+      </div>
+    </section>
+
+    <!-- 11 SECURITY -->
+    <section class="sec" id="security">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">11 — Security</div>
+          <h2 class="sec-title">Security</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>We take the security of your personal data seriously and implement appropriate technical and organisational measures to protect it against unauthorised access, loss, alteration, or disclosure.</p>
+      </div>
+      <ul class="ulist">
+        <li>All data transmitted between the App and our servers is protected using strong, industry-standard encryption in transit</li>
+        <li>Your data is stored using encryption at rest on our secure cloud infrastructure</li>
+        <li>Access to your personal data within our systems is restricted on a strict need-to-know basis</li>
+        <li>Your password is never stored by us — sign-in is handled through a dedicated, secure authentication service</li>
+        <li>Your personal data in our database is protected by security rules that ensure only your own account can access your information</li>
+        <li>We regularly review and test our security practices and update our systems to address emerging threats</li>
+        <li>Two-factor authentication is available for your account under <strong>Settings → Security</strong></li>
+      </ul>
+      <div class="callout neutral">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <div class="callout-body">No method of electronic transmission or storage is 100% secure. While we use our best efforts to protect your data, we cannot guarantee absolute security. In the event of a data breach that affects your rights, we will notify you and relevant authorities as required by applicable law.</div>
+      </div>
+    </section>
+
+    <!-- 12 CHANGES -->
+    <section class="sec" id="changes">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">12 — Updates</div>
+          <h2 class="sec-title">Policy Changes</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>We may update this Privacy Policy periodically to reflect changes in our practices, the App's features, or legal requirements. We will always update the "Effective" date at the top of this page when we make changes.</p>
+        <p>For <strong>material changes</strong> — those that significantly affect your rights or how we use your data — we will notify you in advance by:</p>
+      </div>
+      <ul class="ulist">
+        <li>Displaying a clear notice within the App on your next login</li>
+        <li>Sending a push notification to your device (if you have notifications enabled)</li>
+        <li>Emailing you at your registered address where the change is significant</li>
+      </ul>
+      <div class="prose">
+        <p>Your continued use of the App after the effective date of any revised policy constitutes your acceptance of the updated terms. If you do not agree with a change, you may stop using the App and delete your account at any time.</p>
+      </div>
+    </section>
+
+    <!-- 13 CONTACT -->
+    <section class="sec" id="contact">
+      <div class="sec-head">
+        <div class="sec-bar"></div>
+        <div>
+          <div class="sec-label">13 — Contact</div>
+          <h2 class="sec-title">Contact Us</h2>
+        </div>
+      </div>
+      <div class="prose">
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please get in touch. We aim to respond to all privacy-related enquiries within <strong>48 business hours</strong>.</p>
+      </div>
+      <div class="contact-box">
+        <h3>NutriTrack — Privacy</h3>
+        <div class="crow">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="cl">Email</span>
+          <span><a href="mailto:privacy@nutritrack.app">privacy@nutritrack.app</a></span>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="cl">Website</span>
+          <span><a href="https://nutritrack.app/privacy">nutritrack.app/privacy</a></span>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span class="cl">In-App</span>
+          <span>Settings → Help → Contact Support</span>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="cl">Response</span>
+          <span>Within 48 business hours</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-logo">NutriTrack</div>
+  <p>© 2026 NutriTrack. All rights reserved.<br>
+  Privacy Policy — effective June 10, 2026.</p>
+</footer>
+
+<script>
+  // Section reveal on scroll
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.07, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.sec').forEach(s => obs.observe(s));
+
+  // Active sidebar highlight
+  const links = document.querySelectorAll('#sidenav a');
+  const secs  = document.querySelectorAll('section[id]');
+  const activeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(a => a.classList.remove('on'));
+        const a = document.querySelector(`#sidenav a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('on');
+      }
+    });
+  }, { threshold: 0.4 });
+  secs.forEach(s => activeObs.observe(s));
+</script>
+</body>
+</html>
