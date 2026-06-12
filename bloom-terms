@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions – Bloom Pregnancy App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #FFF7F9;
+    color: #1E1B2E;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  header {
+    background: linear-gradient(135deg, #F472B6, #A78BFA);
+    padding: 32px 24px;
+    text-align: center;
+  }
+  header h1 { color: #fff; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  header p  { color: #fff; opacity: 0.9; margin-top: 6px; font-size: 14px; }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .container { max-width: 780px; margin: 40px auto; padding: 0 24px 60px; }
+  .meta {
+    background: #fff;
+    border-left: 4px solid #A78BFA;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 20px;
+    margin-bottom: 36px;
+    font-size: 14px;
+    color: #6B7280;
+  }
+  .meta strong { color: #1E1B2E; }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #7C3AED;
+    margin: 40px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EDE9FE;
+  }
+  h3 { font-size: 16px; font-weight: 600; color: #1E1B2E; margin: 24px 0 8px; }
+  p  { margin-bottom: 14px; color: #374151; }
+  ul, ol { margin: 10px 0 16px 22px; color: #374151; }
+  li { margin-bottom: 7px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; }
+  th {
+    background: #EDE9FE;
+    color: #7C3AED;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+  }
+  td { padding: 10px 14px; border-bottom: 1px solid #EDE9FE; color: #374151; }
+  tr:last-child td { border-bottom: none; }
+  .highlight {
+    background: #F5F3FF;
+    border: 1px solid #C4B5FD;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 15px;
+    color: #4C1D95;
+  }
+  .highlight strong { color: #6D28D9; }
+  .warning {
+    background: #FFFBEB;
+    border: 1px solid #FCD34D;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 15px;
+    color: #78350F;
+  }
+  .warning strong { color: #92400E; }
+  .contact-box {
+    background: #fff;
+    border: 1px solid #C4B5FD;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px 0;
+  }
+  .contact-box p { margin: 4px 0; }
+  .toc {
+    background: #fff;
+    border: 1px solid #EDE9FE;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  .toc h3 { color: #7C3AED; margin: 0 0 12px; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
+  .toc ol { margin: 0 0 0 18px; }
+  .toc li { margin-bottom: 5px; font-size: 14px; }
+  .toc a { color: #7C3AED; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid #EDE9FE;
+    color: #9CA3AF;
+    font-size: 14px;
+  }
+  footer strong { color: #A78BFA; }
+  a { color: #A78BFA; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    header h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    table { font-size: 13px; }
+    td, th { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌸 Bloom</h1>
+  <p>Your Pregnancy Companion</p>
+  <span class="badge">Terms &amp; Conditions</span>
+</header>
+
+<div class="container">
+
+  <div class="meta">
+    <strong>Effective Date:</strong> June 10, 2025 &nbsp;·&nbsp;
+    <strong>Last Updated:</strong> June 10, 2025 &nbsp;·&nbsp;
+    <strong>Version:</strong> 1.0
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#s1">Acceptance of Terms</a></li>
+      <li><a href="#s2">About Bloom</a></li>
+      <li><a href="#s3">Eligibility</a></li>
+      <li><a href="#s4">Account Registration</a></li>
+      <li><a href="#s5">Acceptable Use</a></li>
+      <li><a href="#s6">Medical Disclaimer</a></li>
+      <li><a href="#s7">AI Chatbot Terms</a></li>
+      <li><a href="#s8">Content and Intellectual Property</a></li>
+      <li><a href="#s9">User-Generated Content</a></li>
+      <li><a href="#s10">Partner Sharing Feature</a></li>
+      <li><a href="#s11">Subscriptions and Payments</a></li>
+      <li><a href="#s12">Disclaimers and Limitation of Liability</a></li>
+      <li><a href="#s13">Indemnification</a></li>
+      <li><a href="#s14">Termination</a></li>
+      <li><a href="#s15">Changes to Terms</a></li>
+      <li><a href="#s16">Governing Law</a></li>
+      <li><a href="#s17">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 id="s1">1. Acceptance of Terms</h2>
+  <p>By downloading, installing, or using the Bloom – Your Pregnancy Companion mobile application ("App", "Bloom", "we", "our", or "us"), you ("User", "you") agree to be bound by these Terms and Conditions ("Terms").</p>
+  <p>If you do not agree to these Terms, please do not use the App. Your continued use of the App after any changes to these Terms constitutes your acceptance of the revised Terms.</p>
+  <div class="highlight">
+    Please read these Terms carefully before using Bloom. These Terms form a legally binding agreement between you and Bloom.
+  </div>
+
+  <!-- SECTION 2 -->
+  <h2 id="s2">2. About Bloom</h2>
+  <p>Bloom is a pregnancy tracking and companion application that provides:</p>
+  <ul>
+    <li>Week-by-week pregnancy and baby development information</li>
+    <li>Pregnancy tools including kick counter, contraction timer, and weight log</li>
+    <li>Planning features including appointment calendar, hospital bag checklist, and birth plan builder</li>
+    <li>A baby names library with meanings and origins</li>
+    <li>Educational articles and helpful tips based on WHO and CDC guidelines</li>
+    <li>A bump photo diary</li>
+    <li>An AI-powered pregnancy assistant chatbot</li>
+    <li>Partner sharing features</li>
+  </ul>
+  <p>Bloom is developed and operated independently. The App is available on Android and iOS platforms.</p>
+
+  <!-- SECTION 3 -->
+  <h2 id="s3">3. Eligibility</h2>
+  <p>To use Bloom, you must:</p>
+  <ul>
+    <li>Be at least <strong>18 years of age</strong></li>
+    <li>Have the legal capacity to enter into a binding agreement</li>
+    <li>Not be barred from using the App under any applicable law</li>
+  </ul>
+  <p>By using Bloom, you represent and warrant that you meet all of the above eligibility requirements. If you are using the App on behalf of someone else, you confirm you have their consent to do so.</p>
+
+  <!-- SECTION 4 -->
+  <h2 id="s4">4. Account Registration</h2>
+
+  <h3>4.1 Creating an Account</h3>
+  <p>To access most features of Bloom, you must create an account by providing a valid email address and password. You may also be asked to provide pregnancy-related information to personalize your experience.</p>
+
+  <h3>4.2 Account Security</h3>
+  <p>You are responsible for:</p>
+  <ul>
+    <li>Keeping your password confidential and secure</li>
+    <li>All activity that occurs under your account</li>
+    <li>Notifying us immediately at <a href="mailto:support@bloompregnancy.app">support@bloompregnancy.app</a> if you suspect unauthorized access</li>
+  </ul>
+  <p>We will not be liable for any loss or damage arising from your failure to protect your account credentials.</p>
+
+  <h3>4.3 Accurate Information</h3>
+  <p>You agree to provide accurate, current, and complete information when creating your account and to update this information as necessary to keep it accurate.</p>
+
+  <h3>4.4 One Account Per User</h3>
+  <p>Each user may only maintain one active account. Creating multiple accounts to circumvent restrictions or abuse features is not permitted.</p>
+
+  <!-- SECTION 5 -->
+  <h2 id="s5">5. Acceptable Use</h2>
+
+  <h3>5.1 Permitted Use</h3>
+  <p>You may use Bloom solely for your personal, non-commercial pregnancy tracking and informational purposes.</p>
+
+  <h3>5.2 Prohibited Activities</h3>
+  <p>You agree NOT to:</p>
+  <ul>
+    <li>Use the App for any unlawful purpose or in violation of any applicable laws</li>
+    <li>Attempt to gain unauthorized access to any part of the App or its infrastructure</li>
+    <li>Reverse engineer, decompile, disassemble, or attempt to extract the source code of the App</li>
+    <li>Copy, modify, distribute, sell, or lease any part of the App or its content</li>
+    <li>Use automated tools (bots, scrapers, crawlers) to access or collect data from the App</li>
+    <li>Upload or transmit any viruses, malware, or malicious code</li>
+    <li>Impersonate any person or entity or misrepresent your affiliation with any person or entity</li>
+    <li>Use the App to harass, abuse, or harm another person</li>
+    <li>Attempt to interfere with the proper functioning of the App or its servers</li>
+    <li>Use the App's AI chatbot to generate harmful, offensive, or misleading medical content</li>
+    <li>Commercially exploit the App's content without our written permission</li>
+  </ul>
+  <p>Violation of these prohibited activities may result in immediate termination of your account.</p>
+
+  <!-- SECTION 6 -->
+  <h2 id="s6">6. Medical Disclaimer</h2>
+
+  <div class="warning">
+    <strong>⚠️ Important Medical Notice:</strong> Bloom is an informational tool only and is NOT a medical device, medical service, or substitute for professional medical advice, diagnosis, or treatment.
+  </div>
+
+  <p>The content provided in Bloom, including but not limited to articles, tips, baby development information, weight tracking, kick counting, contraction timing, and AI chatbot responses:</p>
+  <ul>
+    <li>Is intended for <strong>general informational purposes only</strong></li>
+    <li>Is based on publicly available guidelines from WHO, CDC, and NHS</li>
+    <li>Does <strong>not</strong> constitute medical advice</li>
+    <li>Should <strong>not</strong> be used as a basis for medical decisions</li>
+    <li>Does <strong>not</strong> replace consultation with a qualified healthcare provider</li>
+  </ul>
+
+  <p><strong>Always seek the advice of your doctor, midwife, or other qualified health provider</strong> with any questions you may have regarding your pregnancy, medical condition, or treatment. Never disregard professional medical advice or delay seeking it because of something you have read or received through Bloom.</p>
+
+  <p>In a medical emergency, call your local emergency services (such as 1122 in Pakistan, 999 in UK, or 911 in USA) immediately. Do not rely on Bloom in emergency situations.</p>
+
+  <p>We expressly disclaim all liability for any medical decisions made based on information obtained through Bloom.</p>
+
+  <!-- SECTION 7 -->
+  <h2 id="s7">7. AI Chatbot Terms</h2>
+
+  <h3>7.1 Nature of the AI Assistant</h3>
+  <p>The Bloom AI assistant ("Bloom Assistant") is powered by Anthropic's Claude AI and is designed to provide general pregnancy-related information. It is not a licensed medical professional.</p>
+
+  <h3>7.2 Limitations of AI Responses</h3>
+  <p>You acknowledge that:</p>
+  <ul>
+    <li>AI responses may not always be accurate, complete, or up to date</li>
+    <li>The AI is programmed to respond only to pregnancy-related topics</li>
+    <li>Responses should not be treated as professional medical advice</li>
+    <li>The AI cannot diagnose conditions, prescribe treatments, or replace a doctor's assessment</li>
+  </ul>
+
+  <h3>7.3 Appropriate Use of AI Chatbot</h3>
+  <p>You agree to use the AI assistant only for general pregnancy questions and information. You agree not to attempt to manipulate the AI into providing harmful content, bypass its safety restrictions, or use it for purposes other than pregnancy-related support.</p>
+
+  <h3>7.4 Data Processing</h3>
+  <p>Your chat messages are processed by Anthropic's API. By using the chatbot, you consent to this processing as described in our <a href="./index.html">Privacy Policy</a>.</p>
+
+  <!-- SECTION 8 -->
+  <h2 id="s8">8. Content and Intellectual Property</h2>
+
+  <h3>8.1 Our Content</h3>
+  <p>All content in Bloom, including but not limited to text, graphics, logos, icons, images, audio clips, and software, is the property of Bloom or its content suppliers and is protected by applicable intellectual property laws.</p>
+
+  <h3>8.2 License to Use</h3>
+  <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use Bloom strictly in accordance with these Terms for your personal, non-commercial use.</p>
+
+  <h3>8.3 Restrictions</h3>
+  <p>You may not reproduce, distribute, modify, create derivative works of, publicly display, or commercially exploit any content from Bloom without our prior written consent.</p>
+
+  <h3>8.4 Third-Party Content</h3>
+  <p>Bloom may display content from third-party sources such as YouTube videos and articles. Such content remains the property of its respective owners. We do not claim ownership of third-party content and are not responsible for its accuracy.</p>
+
+  <h3>8.5 Educational Content Sources</h3>
+  <p>Articles and health information in Bloom are based on guidelines from the World Health Organization (WHO), Centers for Disease Control and Prevention (CDC), and NHS. This content is used for educational purposes under applicable open-access guidelines.</p>
+
+  <!-- SECTION 9 -->
+  <h2 id="s9">9. User-Generated Content</h2>
+
+  <h3>9.1 Your Content</h3>
+  <p>You retain ownership of content you create within the App, including bump diary photos, notes, birth plans, and checklists ("Your Content").</p>
+
+  <h3>9.2 License You Grant Us</h3>
+  <p>By uploading or creating content in Bloom, you grant us a limited license to store, display, and process Your Content solely for the purpose of providing the App's services to you. We do not use Your Content for marketing, AI training, or any other purpose.</p>
+
+  <h3>9.3 Your Responsibility</h3>
+  <p>You are solely responsible for Your Content. You represent that you have all necessary rights to upload and use Your Content within the App.</p>
+
+  <h3>9.4 Prohibited Content</h3>
+  <p>You agree not to upload content that is illegal, offensive, defamatory, or violates any third party's rights.</p>
+
+  <!-- SECTION 10 -->
+  <h2 id="s10">10. Partner Sharing Feature</h2>
+  <p>The Partner Sharing feature allows you to share a read-only view of your pregnancy dashboard with a partner, family member, or support person.</p>
+  <ul>
+    <li>You are responsible for who you share your Partner Code with</li>
+    <li>Partners can only view data — they cannot edit or delete anything</li>
+    <li>You can revoke partner access at any time from Settings</li>
+    <li>We are not responsible for any consequences arising from sharing your Partner Code with an unauthorized person</li>
+    <li>Do not share your Partner Code publicly or with people you do not trust</li>
+  </ul>
+
+  <!-- SECTION 11 -->
+  <h2 id="s11">11. Subscriptions and Payments</h2>
+
+  <h3>11.1 Free Features</h3>
+  <p>Bloom offers core features at no cost. These free features are provided "as is" and may change over time.</p>
+
+  <h3>11.2 Premium Features (If Applicable)</h3>
+  <p>If Bloom introduces premium subscription features in the future:</p>
+  <ul>
+    <li>Subscription fees will be clearly displayed before purchase</li>
+    <li>Subscriptions will auto-renew unless cancelled before the renewal date</li>
+    <li>Refunds will be handled in accordance with the Google Play Store and Apple App Store refund policies</li>
+        <li>We will provide at least 30 days notice before introducing any paid features</li>
+  </ul>
+
+  <h3>11.3 In-App Purchases</h3>
+  <p>Any in-app purchases are processed through the Google Play Store or Apple App Store. We do not directly handle payment information. All purchases are subject to the respective store's terms and refund policies.</p>
+
+  <!-- SECTION 12 -->
+  <h2 id="s12">12. Disclaimers and Limitation of Liability</h2>
+
+  <h3>12.1 App Provided "As Is"</h3>
+  <p>Bloom is provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+
+  <h3>12.2 No Guarantee of Availability</h3>
+  <p>We do not guarantee that the App will be available at all times, uninterrupted, error-free, or free of viruses or other harmful components. We may suspend or discontinue the App at any time without notice.</p>
+
+  <h3>12.3 Limitation of Liability</h3>
+  <p>To the maximum extent permitted by applicable law, Bloom and its developers, officers, and affiliates shall not be liable for:</p>
+  <ul>
+    <li>Any indirect, incidental, special, consequential, or punitive damages</li>
+    <li>Any medical decisions or outcomes based on App content</li>
+    <li>Loss of data, profits, or goodwill</li>
+    <li>Any damages resulting from unauthorized access to your account</li>
+    <li>Any harm arising from reliance on the AI chatbot's responses</li>
+    <li>Service interruptions or technical failures</li>
+  </ul>
+  <p>In no event shall our total liability to you exceed the amount you paid us in the 12 months preceding the claim (or PKR 1,000 if you have not made any payments).</p>
+
+  <h3>12.4 Accuracy of Information</h3>
+  <p>While we strive to provide accurate and up-to-date information, we make no representations or warranties about the accuracy, completeness, or reliability of any content in the App. Pregnancy information and medical guidelines evolve over time, and we cannot guarantee all content reflects the most current recommendations.</p>
+
+  <!-- SECTION 13 -->
+  <h2 id="s13">13. Indemnification</h2>
+  <p>You agree to indemnify, defend, and hold harmless Bloom and its developers, officers, and affiliates from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable legal fees) arising out of or in connection with:</p>
+  <ul>
+    <li>Your use of the App in violation of these Terms</li>
+    <li>Your violation of any applicable law or regulation</li>
+    <li>Your violation of any third-party rights</li>
+    <li>Any content you submit or upload to the App</li>
+  </ul>
+
+  <!-- SECTION 14 -->
+  <h2 id="s14">14. Termination</h2>
+
+  <h3>14.1 Termination by You</h3>
+  <p>You may stop using Bloom and delete your account at any time from <strong>Settings → Delete Account</strong>. Upon account deletion, your data will be permanently removed within 30 days.</p>
+
+  <h3>14.2 Termination by Us</h3>
+  <p>We reserve the right to suspend or terminate your account at any time, with or without notice, if we believe you have violated these Terms, engaged in fraudulent activity, or used the App in a way that could harm other users or Bloom's reputation.</p>
+
+  <h3>14.3 Effect of Termination</h3>
+  <p>Upon termination, your right to use the App will immediately cease. Sections of these Terms that by their nature should survive termination (including Sections 6, 8, 12, 13, and 16) shall survive.</p>
+
+  <!-- SECTION 15 -->
+  <h2 id="s15">15. Changes to Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. When we make significant changes:</p>
+  <ul>
+    <li>We will update the "Last Updated" date at the top of this page</li>
+    <li>We will notify you via push notification or in-app message</li>
+    <li>For major changes, we may ask you to review and accept the new Terms before continuing to use the App</li>
+  </ul>
+  <p>Your continued use of Bloom after changes are posted constitutes your acceptance of the revised Terms. If you do not agree to the revised Terms, please stop using the App and delete your account.</p>
+
+  <!-- SECTION 16 -->
+  <h2 id="s16">16. Governing Law and Dispute Resolution</h2>
+
+  <h3>16.1 Governing Law</h3>
+  <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>Islamic Republic of Pakistan</strong>, without regard to its conflict of law provisions.</p>
+
+  <h3>16.2 Jurisdiction</h3>
+  <p>Any disputes arising from or relating to these Terms or your use of Bloom shall be subject to the exclusive jurisdiction of the courts of <strong>Lahore, Punjab, Pakistan</strong>.</p>
+
+  <h3>16.3 Informal Resolution</h3>
+  <p>Before filing any formal legal claim, you agree to first contact us at <a href="mailto:support@bloompregnancy.app">support@bloompregnancy.app</a> and give us 30 days to attempt to resolve the dispute informally.</p>
+
+  <!-- SECTION 17 -->
+  <h2 id="s17">17. Contact Us</h2>
+  <p>If you have any questions, concerns, or requests regarding these Terms, please contact us:</p>
+  <div class="contact-box">
+    <p><strong>Email:</strong> <a href="mailto:support@bloompregnancy.app">support@bloompregnancy.app</a></p>
+    <p><strong>App:</strong> Bloom – Your Pregnancy Companion</p>
+    <p><strong>Response Time:</strong> We aim to respond within 5–7 business days</p>
+    <p style="margin-top:12px; font-size:14px; color:#6B7280;">For privacy-related requests, please contact: <a href="mailto:privacy@bloompregnancy.app">privacy@bloompregnancy.app</a></p>
+  </div>
+
+  <div class="highlight">
+    By using Bloom, you confirm that you have read, understood, and agreed to these Terms and Conditions.
+  </div>
+
+  <!-- LINKS TO OTHER PAGES -->
+  <p style="margin-top:32px; text-align:center; font-size:15px; color:#6B7280;">
+    Also read our <a href="./index.html">Privacy Policy</a>
+  </p>
+
+</div>
+
+<footer>
+  <strong>🌸 Bloom – Your Pregnancy Companion</strong><br>
+  <span style="margin-top:6px; display:block;">Every bloom begins with a single seed.</span>
+  <span style="margin-top:4px; display:block; font-size:12px;">© 2025 Bloom. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
